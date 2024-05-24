@@ -1,0 +1,12 @@
+[build]
+  command = "node index.js" # Ou toute autre commande pour construire votre application
+
+[[redirects]]
+  from = "/api/*"
+  to = "/index.js"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/public/:splat"
+  status = 200
